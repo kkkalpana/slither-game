@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(bg.jpg);
+  height: 100vh; /* 100 view port height */
+  width: 100vw; /* 100 view port width */
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board {
+  background: linear-gradient(rgb(154, 213, 154), rgb(204, 204, 111));
+  width: 80vmin;
+  height: 80vmin;
+  border: 2px soplid black;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+  /* increases when eaten food */
+  background-color: hsl(200, 100%, 50%);
+  border: 0.25vmin solid black;
+}
+
+.food {
+  background-color: hsl(11, 84%, 38%);
+  border: 0.25vmin solid black;
+}
+
+#score {
+  position: absolute;
+  top: 5vmin;
+  right: 3vmin;
+  font-size: 3vmin;
+  font-weight: bold;
+}
+
+#highScore {
+  position: absolute;
+  top: 9vmin;
+  right: 3vmin;
+  font-size: 3vmin;
+  font-weight: bold;
+}
